@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-score">
+        <div class="heading">
+          <span class="sub">ROCK</span>
+          <span class="sub">PAPER</span>
+          <span class="sub">SCISSORS</span>
+        </div>
+        <div class="scores">
+          <div class="score-box">
+            <p class="score-title">
+              <span class="title-sub">COMPUTER</span>
+              <span class="title-sub">SCORE</span>
+            </p>
+            <p class="pc-score-value">0</p>
+          </div>
+          <div class="score-box">
+            <p class="score-title">
+              <span class="title-sub">YOUR</span>
+              <span class="title-sub">SCORE</span>
+            </p>
+            <p class="player-score-value">0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-container">
+        <div class="choice-rock" onclick="playGame('rock')">
+          <img src="./assets/rock.png" alt="Rock" class="rock-image" />
+        </div>
+        <div class="choice-paper" onclick="playGame('paper')">
+          <img src="./assets/paper.png" alt="Paper" class="paper-image" />
+        </div>
+        <div class="choice-scissor" onclick="playGame('scissor')">
+          <img src="./assets/scissor.png" alt="Scissor" class="scissor-image" />
+        </div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <div class="result">
+        <div class="player-pick">
+          <p class="pick-title">YOU PICKED</p>
+          <div id="playerWin">
+            <div id="playerResult">
+              <img src="" alt="" id="playerResultImg" />
+            </div>
+          </div>
+        </div>
+        <div class="mid-result-sec">
+          <h2 class="result-title"></h2>
+          <h2 class="result-title2">AGAINT PC</h2>
+          <button class="replay-btn" onclick="restartGame()">PLAY AGAIN</button>
+        </div>
+        <div class="cpu-pick">
+          <p class="pick-title">PC PICKED</p>
+          <div id="cpuWin">
+            <div id="cpuResult">
+              <img src="" alt="" id="cpuResultImg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tie-up">
+        <div class="player-pick">
+          <p class="pick-title">YOU PICKED</p>
+          <div id="playerImageDiv">
+            <img src="" alt="" id="tie-player-image" />
+          </div>
+        </div>
+        <div class="mid-tie-sec">
+          <h2 class="tie-title">TIE UP</h2>
+          <button class="replay-btn" onclick="restartGame()">REPLAY</button>
+        </div>
+        <div class="cpu-pick">
+          <p class="pick-title">PC PICKED</p>
+          <div id="cpuImageDiv">
+            <img src="" alt="" id="tie-cpu-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="animation-screen">
+        <div class="main-section">
+          <div class="stars-div">
+            <img src="./assets/star.png" alt="" class="stars-img" />
+          </div>
+          <div class="cup-div">
+            <img src="./assets/cup.png" alt="" class="cup-img" />
+          </div>
+          <div class="animation-text">
+            <span class="ani-text-1">HURRAY!!</span>
+            <span class="ani-text-2">YOU WON THE GAME</span>
+          </div>
+          <button class="ani-btn">PLAY AGAIN</button>
+        </div>
+      </div>
+
+      <button class="rules-btn" id="open-rules">RULES</button>
+
+      <div class="rules-modal" id="rules-modal">
+        <div class="rules-content">
+          <h2>Game Rules</h2>
+          <ul>
+            <li>
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <li>
+              Agree ahead of time whether you'll count off "rock, paper,
+              scissors, shoot" or just "rock, paper, scissors"
+            </li>
+            <li>
+              Use rock,paper,scissors to settle minor decisions or simply play
+              to pass the time.
+            </li>
+            <li>
+              If both players lay down the same hand, each player lays down
+              another hand.
+            </li>
+          </ul>
+          <button class="close-btn" id="close-rules">X</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
