@@ -73,6 +73,8 @@ function playGame(playerChoice) {
     playerScore++;
     localStorage.setItem("playerScore", playerScore);
     document.querySelector(".player-score-value").innerText = playerScore;
+    document.querySelector(".next-btn").style.display = "block";
+    document.querySelector(".rules-btn").classList.add("shift-btn-left");
   } else if (
     (computerChoice === "rock" && playerChoice === "scissor") ||
     (computerChoice === "scissor" && playerChoice === "paper") ||
@@ -128,6 +130,9 @@ function restartGame() {
 
   const playerImg = document.getElementById("playerResultImg");
   playerImg.src = "";
+
+  document.querySelector(".next-btn").style.display = "none";
+  document.querySelector(".rules-btn").classList.remove("shift-btn-left");
 }
 
 // for tie-up screen , div for the image is player-scissor/rock/paper and the image class will be scissor/rock/paper-image

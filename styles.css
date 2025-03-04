@@ -551,3 +551,26 @@
   color: #6b6b6b;
   font-weight: 600;
 }
+
+.next-btn {
+  display: none;
+  width: 119px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+.shift-btn-left {
+  right: 170px;
+}
