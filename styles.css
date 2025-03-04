@@ -286,7 +286,6 @@
 }
 
 .player-rock {
-  /* position: absolute; */
   width: 130px;
   height: 130px;
   background-color: white;
@@ -407,29 +406,9 @@
   cursor: pointer;
 }
 
-/* .player-choice-img-rock {
-  width: 65px;
-  height: 50px;
-}
-.player-choice-img-paper {
-  width: 65px;
-  height: 50px;
-}
-.player-choice-img-scissor {
-  width: 65px;
-  height: 50px;
-}
-
-.cpu-choice-img {
-  width: 65px;
-  height: 50px;
-} */
-
 .show {
   display: flex;
 }
-
-/* result section */
 
 .result {
   display: none;
@@ -550,6 +529,7 @@
   letter-spacing: 1.5px;
   color: #6b6b6b;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .next-btn {

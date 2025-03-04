@@ -108,6 +108,14 @@ function playGame(playerChoice) {
   }
 }
 
+function nextButton() {
+  document.querySelector(".heading-score").style.display = "none";
+  document.querySelector(".result").style.display = "none";
+  document.querySelector(".game-container").style.display = "none";
+  document.querySelector(".rules-btn").classList.remove("shift-btn-left");
+  document.querySelector(".main-section").style.display = "flex";
+}
+
 function restartGame() {
   document.querySelector(".result").style.display = "none";
   document.querySelector(".tie-up").style.display = "none";
@@ -133,8 +141,7 @@ function restartGame() {
 
   document.querySelector(".next-btn").style.display = "none";
   document.querySelector(".rules-btn").classList.remove("shift-btn-left");
+  document.querySelector(".main-section").style.display = "none";
+  document.querySelector(".heading-score").style.display = "flex";
+  document.querySelector(".game-container").style.display = "flex";
 }
-
-// for tie-up screen , div for the image is player-scissor/rock/paper and the image class will be scissor/rock/paper-image
-// same goes for cpu, div for the image is cpu-scissor/rock/paper and the image class will be scissor/rock/paper-image
-// for result screen , div for the image is player-scissor and same as tie-up
